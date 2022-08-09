@@ -19,16 +19,17 @@ if(url ==='/message' && method === 'POST'){
         console.log(chunk)
 body.push(chunk);
     });
-    req.on('end', ()=>{
+ return   req.on('end', ()=>{
         const parsedboy= Buffer.concat(body).toString();
         const val= parsedboy.split('=')[1];
         file.writeFileSync('user.txt',val);
         console.log(val);
-    });
-
-res.statusCode =302;
+        res.statusCode =302;
 res.setHeader('Location','/');
 return  res.end();
+    });
+
+
 }
    // process.exit();
    res.setHeader('Content-Type','text/html')
