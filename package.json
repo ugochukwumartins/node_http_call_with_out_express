@@ -1,0 +1,23 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugochukwumartins/node_http_call_with_out_express.git"
+  },
+  "author": "ugo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ugochukwumartins/node_http_call_with_out_express/issues"
+  },
+  "homepage": "https://github.com/ugochukwumartins/node_http_call_with_out_express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
